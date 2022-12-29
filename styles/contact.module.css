@@ -1,13 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caramel&display=swap");
 
+.title {
+  font-family: "Forum", cursive;
+  font-size: 3em;
+  text-shadow: 0 0 5px #0b0b0b;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.5em;
+    width: 80%;
+    text-align: center;
+  }
+}
+
 .text {
   font-family: "Caramel", cursive;
   font-size: 2em;
 }
-
-.title {
-  font-family: "Forum", cursive;
-  font-size: 4em;
-  text-shadow: 0 0 5px #0b0b0b;
+@media (max-width: 600px) {
+  .text {
+    font-size: 1em;
+    text-align: right;
+  }
 }
