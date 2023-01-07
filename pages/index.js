@@ -15,18 +15,18 @@ const HelloWorld = () => {
 
       <h1>Hello World</h1>
 
-       <div className="m-10 flex w-[50vw] h-[40vh] relative"> 
+      <div className="m-10 flex w-[50vw] h-[50vh] relative">
         <Image
-          src="/chien-mignon-compressed1-256px.png"
+          src="/chien-mignon-compressed1-2048px.png"
           alt="little dog"
           priority={true}
-          width="100"
-          height="100"
+          width="600"
+          height="300"
+          sizes="(max-width: 640px) 50px, 50vw"
         />
       </div>
 
-
-       {/* <div className="m-10 flex xl:hidden 2xl:hidden w-[50vw] h-[40vh] relative"> 
+      {/* <div className="m-10 flex xl:hidden 2xl:hidden w-[50vw] h-[40vh] relative"> 
         <Image
           src="/chien-mignon-compressed1-256px.png"
           alt="little dog"
@@ -44,9 +44,6 @@ const HelloWorld = () => {
           height="300"
         />
       </div>  */}
-
-
-  
 
       <p>hello la famille</p>
       <p>
