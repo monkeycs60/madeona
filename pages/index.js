@@ -1,11 +1,17 @@
 import React from "react";
+import Head from "next/head";
 import Image from "next/image";
-
-
 
 const HelloWorld = () => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Welcome to Madeona Photography, featuring the stunning and creative work of freelance photographer Madeona. Take a look at our galleries to see a selection of Madeona's best photos, or get in touch to discuss your own photography needs."
+        />
+        <title>Madeona Photography</title>
+      </Head>
       <h1>Hello World</h1>
       <div className="container w-[100vw] h-[80vh] relative">
         <Image
