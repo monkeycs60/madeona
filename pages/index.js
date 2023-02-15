@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Header from "../components/Header";
 
 const HelloWorld = () => {
   return (
@@ -12,10 +13,11 @@ const HelloWorld = () => {
         />
         <title>Madeona Photography</title>
       </Head>
+      <Header />
 
       <h1>Hello World</h1>
 
-      <div className="m-10 flex w-[50vw] h-[50vh] relative">
+      <div className="m-20 flex w-[50vw] h-[50vh] relative">
         <Image
           src="/chien-mignon-compressed1-2048px.png"
           alt="little dog"
