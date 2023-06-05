@@ -6,14 +6,12 @@ export default async function Home() {
 	const projects = await getProjects();
 	return (
 		<div className='max-w-7xl mx-auto text-4xl bg-red-600'>
-			<h1>my projects go here</h1>
-			<div className='flex justify-center items-center'>
+			<h1 className='font-titles'>my projects go here</h1>
+			<div className='flex justify-center items-center font-body'>
 				{projects.map((project) => (
-					<Link
-						href={`/projects/${project.slug}`}
-						key={project._id}>
+					<Link href={`/projects/${project.slug}`} key={project._id}>
 						<div>
-							<div>{project.name}</div>
+							<div className='font-script'>{project.name}</div>
 							{project.image && (
 								<Image
 									src={project.image}

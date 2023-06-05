@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Sugeng-Rawuh';
+	src: url('/fonts/Sugeng-Rawuh.ttf') format('truetype'),
+		url('/fonts/Sugeng-Rawuh.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
