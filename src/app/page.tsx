@@ -30,7 +30,7 @@ export default function Home() {
 						height={200}
 						alt='logo'
 					/>
-					<p className='text-center tracking-wide lg:text-center 3xl:text-center'>
+					<p className='w-[90%] p-2 text-center tracking-wide lg:w-auto lg:text-center 3xl:text-center'>
 						Découvrez très bientôt mes créations et l&apos;ensemble de mes
 						prestations à cette addresse{' '}
 					</p>
