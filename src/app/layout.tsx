@@ -1,7 +1,4 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
 	title: 'Madeona',
@@ -15,7 +12,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='fr'>
-			<body className={inter.className}>{children}</body>
+			<body className='flex h-screen w-screen items-center justify-center overflow-hidden bg-madeonaBrown-300'>
+				{children}
+			</body>
 		</html>
 	);
 }

@@ -1,11 +1,52 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { BsInstagram } from 'react-icons/bs';
+import { MdConstruction } from 'react-icons/md';
 
-export default async function Home() {
+export default function Home() {
 	return (
-		<div className='max-w-7xl mx-auto text-4xl bg-red-600'>
-			<h1 className='font-titles text-madeonaBrown-600'>my projects go here</h1>
-			<div className='flex justify-center items-center font-body'>
-				
+		<div className='relative mx-auto flex h-auto w-[90%] max-w-7xl flex-col items-center justify-center rounded-lg bg-madeonaBrown-100 p-6 font-body lg:w-[60%] lg:p-12 lg:text-xs'>
+			<MdConstruction
+				size={40}
+				className='absolute -right-4 -top-4 text-black/50'
+			/>
+			<h1 className='mb-4 text-center font-script text-5xl text-black lg:text-left lg:text-6xl'>
+				Site en construction
+			</h1>
+			<div className='relative h-[120px] w-full lg:h-[180px] '>
+				<Image
+					src='/banner-madeona.webp'
+					priority
+					fill
+					className='rounded-t-lg object-cover p-1'
+					alt='bannière photo'
+				/>
+			</div>
+			<div className='flex flex-col px-1 lg:flex-row'>
+				<div className='flex flex-col items-center justify-center gap-4 bg-madeonaBrown-400 p-2 lg:w-1/2 lg:flex-row lg:rounded-bl-lg'>
+					<Image
+						src='/logo-noir-photography-madeona.png'
+						width={200}
+						height={200}
+						alt='logo'
+					/>
+					<p className='text-center tracking-wide lg:text-left '>
+						Découvrez très bientôt mes créations et l&apos;ensemble de mes
+						prestations à cette addresse{' '}
+					</p>
+				</div>
+				<div className='flex items-center justify-center gap-8 rounded-b-lg bg-madeonaBrown-300 p-6 lg:w-1/2 lg:rounded-bl-none lg:p-2'>
+					<p className='p-2 tracking-wide lg:w-1/3'>
+						En attendant, jetez un coup d&apos;oeil à mes dernières
+						publications sur Instagram
+					</p>
+					<Link href='https://www.instagram.com/' target='_blank'>
+						<BsInstagram
+							size={32}
+							className='text-black hover:text-madeonaBrown-400'
+						/>
+					</Link>
+				</div>
 			</div>
 		</div>
 	);
