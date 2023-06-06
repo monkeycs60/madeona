@@ -10,7 +10,18 @@ module.exports = {
 			fontFamily: {
 				titles: ['"Raleway"', 'sans-serif'],
 				body: ['"DM Serif Display"', 'serif'],
-        script: ['"Sugeng-Rawuh"', 'sans-serif'],
+				script: ['"Sugeng-Rawuh"', 'sans-serif'],
+			},
+			colors: {
+				madeonaBrown: {
+					100: '#f5eee6',
+					200: '#e0ccc0',
+					300: '#cab5a2',
+					400: '#9a7365',
+					500: '#b9907a',
+					600: '#5d4239',
+					700: '#9b684d',
+				}
 			},
 		},
 		plugins: [],

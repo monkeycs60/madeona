@@ -12,7 +12,7 @@ const config = defineConfig({
 	schema: {
 		types: schemas,
 	},
-    useCdn: true,
+	useCdn: false,
 });
 
 export default config;
